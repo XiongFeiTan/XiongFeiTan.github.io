@@ -1,4 +1,3 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
@@ -15,7 +14,7 @@ defaults:
     values:
       title: Nemo
 
-description: Stylish Jekyll Theme
+description: Jekyll Theme
 author:
   name: Nemo
   email: xiongfeitan@qq.com
@@ -31,3 +30,7 @@ categories_path: categories.html
 tags_path: tags.html
 
 BASE_PATH:
+
+
+
+
