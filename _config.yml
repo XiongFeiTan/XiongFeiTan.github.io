@@ -13,17 +13,17 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: joekojoe
+      title: Nemo
 
 description: Stylish Jekyll Theme
 author:
-  name: joekojoe
-  email: 761334345@qq.com
-  github: joekojoe
-  twitter: joekojoe
-  pinterest: joekojoe
-  linkedin: joekojoe
-  bio: learn create blog !
+  name: Nemo
+  email: xiongfeitan@qq.com
+  github: Nemo
+  twitter: Nemo
+  pinterest: Nemo
+  linkedin: Nemo
+  bio:  If Winter comes, can Spring be far behind? --Percy Bysshe Shelley 
   
 
 rss_path: feed.xml
