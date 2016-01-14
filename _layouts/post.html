@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% include post.html %}
+<div class="comments">
+        {% if page.comments %}
+          {% include comments.ext %}
+        {% endif %}
+</div>
