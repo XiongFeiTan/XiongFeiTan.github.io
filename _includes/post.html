@@ -88,8 +88,6 @@
 		site:'',/*分享来源 */
 		pics:'', /*分享图片的路径(可选)*/
 		style:'202',
-		width:31,
-		height:31
 	        };
 		var s = [];
 		for(var i in p){
@@ -102,7 +100,7 @@ document.write(['<a title="转发至QQ空间" version="1.0" class="qzOpenerDiv" 
       </section>
 
       <section class="col-sm-6 author">
-        <img src="/images/headpic.png" class="img-rounded author-image" />
+        <img src="/images/headpic.png" />
         <h4 class="section-title author-name">{{site.author.name}}</h4>
         <p class="author-bio">{{site.author.bio}}</p>
       </section>
