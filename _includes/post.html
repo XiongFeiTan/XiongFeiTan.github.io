@@ -76,6 +76,7 @@
         <a title="转发至新浪微博" charset="400-03-10" id="s_sina" onclick="window.open('http://v.t.sina.com.cn/share/share.php?appkey=&url='+window.location.href, 'weibo-share', 'width=490,height=530');return false;">
         <img src="/images/ico_sina.png" />
         </a>
+       
         <script type="text/javascript">
 	(function(){
 		var p = {
@@ -94,14 +95,14 @@
 		for(var i in p){
 		s.push(i + '=' + encodeURIComponent(p[i]||''));
 		}
-document.write(['<a version="1.0" class="qzOpenerDiv" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?',s.join('&'),'" target="_blank">分享</a>'].join(''));
+document.write(['<a title="转发至QQ空间" version="1.0" class="qzOpenerDiv" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?',s.join('&'),'" target="_blank"><img src="/images/ico_sina.png" /></a>'].join(''));
 })();
 </script>
  
       </section>
 
       <section class="col-sm-6 author">
-        <img href="{{ site.BASE_PATH }}/images/headpic.png" class="img-rounded author-image" />
+        <img src="/images/headpic.png" class="img-rounded author-image" />
         <h4 class="section-title author-name">{{site.author.name}}</h4>
         <p class="author-bio">{{site.author.bio}}</p>
       </section>
