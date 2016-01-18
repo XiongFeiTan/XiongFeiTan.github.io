@@ -4,12 +4,9 @@ title: proxy 模式
 comments: true
 categories: [java, design model]
 tags: [java]
-description: the basic of the proxy design model .
+description: proxy 模式 .
 ---
 
-{{ page.title }}
-================
-<p class="meta">12 Jan 2016 - xiangtan</p>
 
 <hr />
 # 代理模式
@@ -31,7 +28,7 @@ RealSubject:
 
 动态代理（接口代理）：代理对象，不需要实现接口，代理对象的生成，利用JDK，API，动态的在内存中构建代理对象，需要指定创建代理对象实现的接口类型。
 代理对象不需要实现接口，但目标对象要实现接口。
-可以使用一个Handler代理多个接口的操作对象。操作java.lang.reflect.InvocationHandler接口。
+可以使用一个Handler代理多个接口的操作对象。操作java.lang.reflect.InvocationHandler 接口。
 
 ---
 
