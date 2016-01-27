@@ -1,17 +1,15 @@
 # XiongFeiTan.github.io
 
-The purpose of this blog , quick recording work, study,  More share, more exchanges, more progress.
+* 1. The purpose of this blog , quick recording work, study,  More share, more exchanges, more progress.
 
-this blog powered by Jekyll. And this blog use for fast recording my work, learning and life.
+* 2. This blog powered by Jekyll. And this blog use for fast recording my work, learning and life.
 
 ---
-this blog reference :
+This blog reference :
 
 #### dbyll is on GitHub
 
-<a class="btn btn-default" href="https://github.com/dbtek/dbyll"></a>
-
-**dbyll** is brought to you by **[dbtek](http://ismaildemirbilek.com)**.
+<a href="https://github.com/dbtek/dbyll"></a>
 
 ---
 
