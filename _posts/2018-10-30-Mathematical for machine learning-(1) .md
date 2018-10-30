@@ -3,12 +3,12 @@ layout: post
 title: Mathematical for machine learning-(1)
 categories: [Math]
 comments: true
-description: ML数学梳理.
+description: 数学这门学科是需要时间和精力去学习和投入的，而且也值得我们去学会运用数学，学会如何化繁为简，学会去解决工程问题，学会去跳出固有思维。
 ---
 
 ## 前言：
 
-![Hello Math](.\ai.png)
+![Hello Math](./ai.png)
 
 对于从事IT工程方面的同学来说，刚开始绝大部分同学可能和我有一样的想法，就是对于一个算法模型，能够根据给定的输入来获得输出，相当于当成一个黑盒调用，不会太关注这个深层的方法是如何处理解决问题的。
 
