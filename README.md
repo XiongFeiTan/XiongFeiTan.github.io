@@ -1,7 +1,5 @@
-# XiongFeiTan.github.io
 
 * >1. More share, More exchanges, More progress.
-
 * >2. This blog powered by Jekyll.
 
 ---
