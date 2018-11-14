@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spark ml Pipeline
-categories: [Machine-Learning]
+categories: [spark mllib]
 comments: true
 description: 推荐使用基于Spark DataFrame ml 开发机器学习任务
 ---
