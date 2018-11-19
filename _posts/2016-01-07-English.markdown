@@ -3,7 +3,7 @@ layout: post
 title: English
 categories: [English]
 comments: true
-description: 关于学习英语.
+description: 关于学习英语几点看法
 ---
 
 ## 英语~语言
