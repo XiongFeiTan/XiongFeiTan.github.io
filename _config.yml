@@ -12,12 +12,12 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Nemo
+      title: xiongfeitan
 
 description: Jekyll Theme
 author:
   name: XiongFeiTan
-  email: xiongfeitan@qq.com
+  email: xiongfeitan@yeah.net
   github: XiongFeiTan
   twitter: XiongFeiTan
   pinterest: XiongFeiTan

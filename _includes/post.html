@@ -34,7 +34,7 @@
 		  {% else %}
 			{% for category in categories_list %} 
 				<li><a href="{{ site.BASE_PATH }}/{{ site.categories_path }}#{{ category[0] }}-ref">
-					{{ category[0] | join: "/" }} <span>/{{ category[1].size }})</span>
+					{{ category[0] | join: "/" }} <span>/{{ category[1].size }}</span>
 				</a></li>
 			{% endfor %}
 		  {% endif %}
@@ -111,7 +111,9 @@ document.write(['<a title="转发至QQ空间" version="1.0" class="qzOpenerDiv" 
       </section>
 
       <section class="col-sm-6 author">
-        <img src="/images/headpic.png" />
+		<a href="{{ site.BASE_PATH }}/">
+        <img src="images/headpic.png" />
+		</a>
         <h4 class="section-title author-name">{{site.author.name}}</h4>
         <p class="author-bio">{{site.author.bio}}</p>
       </section>
