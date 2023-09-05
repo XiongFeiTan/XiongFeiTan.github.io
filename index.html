@@ -46,7 +46,7 @@ tagline:
   {% if paginator.previous_page %}
   <li class="previous">
     {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
+    <a href="{{ site.BASE_PATH }}/">&larr; 前一页</a>
     {% else %}
     <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
     {% endif %}
@@ -58,7 +58,7 @@ tagline:
   {% endif %}
   
   <li>
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    <span class="page_number">第{{ paginator.page }}页</span>
   </li>
 
   {% if paginator.next_page %}
