@@ -21,7 +21,7 @@ author:
   twitter: XiongFeiTan
   pinterest: XiongFeiTan
   linkedin: XiongFeiTan
-  bio: "最好的时间是现在，最好的地方是这里，最好的行动是立即行动。" - 罗伯特·汉森 
+  bio: 最好的时间是现在，最好的地方是这里，最好的行动是立即行动。 - 罗伯特·汉森 
   
 
 rss_path: feed.xml
@@ -29,6 +29,3 @@ categories_path: categories.html
 tags_path: tags.html
 
 BASE_PATH:
-
-
-
