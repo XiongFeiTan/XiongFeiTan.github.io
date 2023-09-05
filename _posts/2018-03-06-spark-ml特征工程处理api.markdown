@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Spark Ml 特征工程api
-categories: [spark mllib]
+title: Spark ML特征工程API
+categories: [机器学习]
 comments: true
-description: Spark Ml 中部分常用特征工程相关API简单解释，帮助记忆
+description: Spark ML中部分常用特征工程相关API简单解释
 ---
 
 **Spark Ml 部分常用API解析：**
@@ -39,3 +39,4 @@ val transformer = new ElementwiseProduct()
 
 > 8.**VectorIndexer** 转化数据集中的类别特征Vector.
 
+> ...
