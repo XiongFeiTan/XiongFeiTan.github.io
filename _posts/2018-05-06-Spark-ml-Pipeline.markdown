@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Spark ml Pipeline
-categories: [spark mllib]
+title: Spark ML Pipeline
+categories: [机器学习]
 comments: true
-description: 推荐使用基于Spark DataFrame ml 开发机器学习任务
+description: 推荐使用基于Spark DataFrame ML开发传统机器学习任务
 ---
 
 ## Spark ml Pipeline
 
-在spark实践当中，DataFrames提供了比RDD更加友好的API，DataFrame的许多优点包括Spark DataSource，SQL / DataFrame查询，
-Tungsten和Catalyst优化以及跨语言的统一API等。所以建议将以往基于RDD转换至DataFrame,可以我们带来性能上部分的优化。
-其中ml当中的pipeline 借鉴于python的机器学习库scikit-learn中的pipeline思想，统一Api使用。
-作为一个串连者，把整个机器学习流程跑在一起，更加方便的完成特定的开发流程。
+在Spark实践当中，DataFrames提供了比RDD更加友好的API，DataFrame的许多优点包括Spark DataSource，SQL / DataFrame查询，Tungsten和Catalyst优化以及跨语言的统一API等, 所以建议将以往基于RDD转换至DataFrame,可以我们带来性能上部分的优化。
+
+---
+其中ML当中的pipeline 借鉴于python的机器学习库scikit-learn中的Pipeline思想，统一API使用, 作为一个串连者, 把整个机器学习流程跑在一起, 更加方便的完成特定的开发流程。
 
 --- 
 
@@ -28,5 +28,5 @@ Tungsten和Catalyst优化以及跨语言的统一API等。所以建议将以往�
 
 ---
 
-具体的demo可以参考：
-官方文档：http://spark.apache.org/docs/latest/ml-pipeline.html
+**具体的demo可以参考：**
+1. 官方文档：```http://spark.apache.org/docs/latest/ml-pipeline.html```

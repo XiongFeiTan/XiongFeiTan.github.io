@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 关于深度神经网络的实际应用方法论
-categories: [Machine-Learning]
+categories: [深度学习]
 comments: true
-description: 在深度神经网络应用当什么样的方法流程值得借鉴？为啥神经网络难以训练？
+description: 在深度神经网络应用当中什么样的方法流程值得借鉴？为啥神经网络难以训练？
 ---
 
 

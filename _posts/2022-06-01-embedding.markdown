@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 关于Embedding一点总结
-categories: [Machine-Learning]
+categories: [深度学习]
 comments: true
-description: 在深度学习中，构建用户或者物品的Embedding是很常见的操作，那么 Embedding是什么?
+description: 在深度学习中构建用户或者物品的Embedding是很常见的操作，那么Embedding是什么?
 ---
 
 # Embedding
