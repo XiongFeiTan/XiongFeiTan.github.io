@@ -25,7 +25,7 @@ LSTM单元结构： LSTM单元由以下几个重要的组件组成：
 4. 输出门（Output Gate）：控制最终输出的信息。
 ```
 
-![avatar](../images/2022/lstm-alg.png)
+![avatar]({{ site.BASE_PATH }}/images/2022/lstm-alg.png)
 
 #### LSTM单元工作流程： 下面是一个LSTM单元的工作流程：
 ```
