@@ -21,8 +21,7 @@ LSTM单元结构： LSTM单元由以下几个重要的组件组成：
 细胞状态（Cell State）：负责存储和传递信息。
 输出门（Output Gate）：控制最终输出的信息。
 
-<img href="{{ site.BASE_PATH }}/images/2022/lstm-alg.png" class="img-circle" />
-
+<img href="../images/2022/lstm-alg.png" class="img-circle" />
 
 #### LSTM单元工作流程： 下面是一个LSTM单元的工作流程：
 ##### 步骤1：输入门决定了哪些信息需要更新到细胞状态中。它通过使用Sigmoid激活函数来生成一个0到1之间的值。接下来，将当前的输入和先前的隐藏状态作为输入，通过一个全连接层来计算输入门的输出。
