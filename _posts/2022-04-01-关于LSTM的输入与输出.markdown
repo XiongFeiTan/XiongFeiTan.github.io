@@ -25,7 +25,7 @@ LSTM单元结构： LSTM单元由以下几个重要的组件组成：
 4. 输出门（Output Gate）：控制最终输出的信息。
 ```
 
-![avatar]({{ site.BASE_PATH }}/images/2022/lstm-alg.png)
+![avatar](/images/2022/lstm-alg.png)
 
 #### LSTM单元工作流程： 下面是一个LSTM单元的工作流程：
 ```
@@ -100,38 +100,29 @@ bidirectional – 如果为True, 双向LSTM. Default: False
 
 
 ##### 输入数据
-```
 输入数据需要按如下形式传入 input, (h_0,c_0)
 
-input: 输入数据，即上面例子中的一个句子（或者一个batch的句子），其维度形状为 (seq_len, batch, input_size)
-seq_len: 句子长度，即单词数量，这个是需要固定的。当然假如你的一个句子中只有2个单词，但是要求输入10个单词，这个时候可以用torch.nn.utils.rnn.pack_padded_sequence()或者torch.nn.utils.rnn.pack_sequence()来对句子进行填充或者截断。
-batch：就是你一次传入的句子的数量
-input_size: 每个单词向量的长度，这个必须和你前面定义的网络结构保持一致
+**input**: 输入数据，即上面例子中的一个句子（或者一个batch的句子），其维度形状为 (seq_len, batch, input_size)
+**seq_len**: 句子长度，即单词数量，这个是需要固定的。当然假如你的一个句子中只有2个单词，但是要求输入10个单词，这个时候可以用torch.nn.utils.rnn.pack_padded_sequence()或者torch.nn.utils.rnn.pack_sequence()来对句子进行填充或者截断。
+**batch**：就是你一次传入的句子的数量
+**input_size**: 每个单词向量的长度，这个必须和你前面定义的网络结构保持一致
 
-h_0：维度形状为 (num_layers * num_directions, batch, hidden_size):
+**h_0**：维度形状为 (num_layers * num_directions, batch, hidden_size):
 结合下图应该比较好理解第一个参数的含义num_layers * num_directions， 即LSTM的层数乘以方向数量。这个方向数量是由前面介绍的bidirectional决定，如果为False,则等于1；反之等于2。
-batch：同上
-hidden_size: 隐藏层节点数
-c_0： 维度形状为 (num_layers * num_directions, batch, hidden_size),各参数含义和h_0类似。
+**hidden_size:** 隐藏层节点数
+**c_0：** 维度形状为 (num_layers * num_directions, batch, hidden_size),各参数含义和h_0类似。
 当然，如果你没有传入(h_0, c_0)，那么这两个参数会默认设置为0。
 
-```
-
-
 ##### 输出数据
-```
-output： 维度和输入数据类似，只不过最后的feature部分会有点不同，即 (seq_len, batch, num_directions * hidden_size)
-这个输出tensor包含了LSTM模型最后一层每个time step的输出特征，比如说LSTM有两层，那么最后输出的是
-,表示第二层LSTM每个time step对应的输出。
-另外如果前面你对输入数据使用了torch.nn.utils.rnn.PackedSequence,那么输出也会做同样的操作编程packed sequence。
-对于unpacked情况，我们可以对输出做如下处理来对方向作分离output.view(seq_len, batch, num_directions, hidden_size), 其中前向和后向分别用0和1表示Similarly, the directions can be separated in the packed case.
-
-
-h_n：(num_layers * num_directions, batch, hidden_size)，
+**output：** 维度和输入数据类似，只不过最后的feature部分会有点不同，即 (seq_len, batch, num_directions * hidden_size), 这个输出tensor包含了LSTM模型最后一层每个time step的输出特征，比如说LSTM有两层，那么最后输出的是,表示第二层LSTM每个time step对应的输出。
+另外如果前面你对输入数据使用了torch.nn.utils.rnn.PackedSequence,那么输出也会做同样的操作编程packed sequence。对于unpacked情况，我们可以对输出做如下处理来对方向作分离output.view(seq_len, batch, num_directions, hidden_size), 其中前向和后向分别用0和1表示Similarly
+<br>
+**h_n：**(num_layers * num_directions, batch, hidden_size)，
 只会输出最后个time step的隐状态结果（如下图所示）。
 Like output, the layers can be separated using h_n.view(num_layers, num_directions, batch, hidden_size) and similarly for c_n.
-c_n ：(num_layers * num_directions, batch, hidden_size)，只会输出最后个time step的cell状态结果（如下图所示）。
-```
+<br>
+**c_n ：**(num_layers * num_directions, batch, hidden_size)，只会输出最后个time step的cell状态结果（如下图所示）。
+<br>
 
 ### 5. 参考文档
-> 1. https://www.zhihu.com/question/41949741/answer/318771336
+1. https://www.zhihu.com/question/41949741/answer/318771336
