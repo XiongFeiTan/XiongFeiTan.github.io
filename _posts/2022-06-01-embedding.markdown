@@ -49,9 +49,9 @@ nn.Embedding.weight 在更新的过程中既没有采用 Skip-gram 也没有采�
 
 
 ### 5. 阅读文档
-> 1. https://pytorch.org/docs/stable/generated/torch.nn.Embedding.html#torch.nn.Embedding
-> <br>
-> 2. https://stackoverflow.com/questions/65445174/what-is-the-difference-between-an-embedding-layer-with-a-bias-immediately-afterw/65448744#65448744
-><br>
->3. https://stackoverflow.com/questions/50747947/embedding-in-pytorch
-> <br> 
+1. https://pytorch.org/docs/stable/generated/torch.nn.Embedding.html#torch.nn.Embedding
+<br>
+2. https://stackoverflow.com/questions/65445174/what-is-the-difference-between-an-embedding-layer-with-a-bias-immediately-afterw/65448744#65448744
+<br>
+3. https://stackoverflow.com/questions/50747947/embedding-in-pytorch
+<br> 
