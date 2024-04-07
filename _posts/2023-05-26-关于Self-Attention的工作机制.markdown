@@ -66,7 +66,7 @@ PyTorch 中 Self-Attention 的实现示例如:
 ![avatar](/images/2023/attention-6.png)
 
 <br>
-在PyTorch中，还可以使用torch.nn.MultiheadAttention模块来实现Self-Attention（自注意力）机制, 如一下简单的demo演示：
+在PyTorch中，还可以使用torch.nn.MultiheadAttention模块来实现Self-Attention（自注意力）机制, 一下是简单的demo演示：
 
 ```
 import torch
