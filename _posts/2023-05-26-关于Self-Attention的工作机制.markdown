@@ -96,14 +96,13 @@ class SelfAttention(nn.Module):
 
 上述代码中，定义了一个名为SelfAttention的自注意力模型。
 
-**首先：** 
-&emsp; 在模型的初始化函数中，使用nn.MultiheadAttention定义了一个多头注意力层，其中embed_size表示输入的嵌入维度，num_heads表示注意力头数。在前向传播函数中，通过调用self.attention对输入进行自注意力计算，得到attended_output。
+**首先：** &emsp; 在模型的初始化函数中，使用nn.MultiheadAttention定义了一个多头注意力层，其中embed_size表示输入的嵌入维度，num_heads表示注意力头数。在前向传播函数中，通过调用self.attention对输入进行自注意力计算，得到attended_output。
 <br>
-**接着:** 
-&emsp; 将输入与attended_output进行残差连接（element-wise相加），然后使用nn.LayerNorm进行层归一化操作。
+**接着:** &emsp; 将输入与attended_output进行残差连接（element-wise相加），然后使用nn.LayerNorm进行层归一化操作。
 <br>
-**最后:** 
-&emsp; 将归一化后的输出通过一个全连接层self.linear进行映射，得到最终的输出结果。
+**最后:** &emsp; 将归一化后的输出通过一个全连接层self.linear进行映射，得到最终的输出结果。
+
+<br>
 <br>
 &nbsp;
 &emsp; attention的这个简单朴素的想法，在推荐系统、时序模型，应用也比较广泛。现阶段推荐系统、时序模型领域内一般新模型都会在语言模型上去做迭代，成功之后会引入推荐模型、时序模型中。
